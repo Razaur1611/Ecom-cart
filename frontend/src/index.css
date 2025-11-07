@@ -1,0 +1,47 @@
+:root{
+  --color-text:#111111;
+  --color-muted:#6b7280; /* Tailwind gray-500 */
+  --color-border:#e5e7eb; /* gray-200 */
+  --color-bg:#ffffff;
+  --color-bg-soft:#fafafa;
+  --color-accent:#111111; /* premium black accent */
+  --color-accent-contrast:#ffffff;
+}
+
+.dark-theme{
+  --color-text:#f3f4f6; /* gray-100 */
+  --color-muted:#9ca3af; /* gray-400 */
+  --color-border:#374151; /* gray-700 */
+  --color-bg:#111827; /* gray-900 */
+  --color-bg-soft:#1f2937; /* gray-800 */
+  --color-accent:#fbbf24; /* amber-400 */
+  --color-accent-contrast:#111827;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins';
+  color: var(--color-text);
+  background: var(--color-bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Smooth theme transitions for key elements */
+.navbar,
+.card,
+.btn,
+input,
+button,
+select {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

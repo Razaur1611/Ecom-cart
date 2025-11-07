@@ -1,0 +1,140 @@
+:root{
+  --text: var(--color-text);
+  --muted: var(--color-muted);
+  --border: var(--color-border);
+  --bg: var(--color-bg);
+  --bg-soft: var(--color-bg-soft);
+  --accent: var(--color-accent);
+}
+
+.info-page{
+  min-height:calc(100vh - 200px);
+  padding:40px 24px;
+  background:var(--bg);
+}
+
+.info-container{
+  max-width:900px;
+  margin:0 auto;
+}
+
+.info-title{
+  font-size:42px;
+  font-weight:900;
+  color:var(--text);
+  letter-spacing:-.02em;
+  margin:0 0 32px;
+  text-align:center;
+}
+
+.info-content{
+  background:var(--bg-soft);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:40px;
+  margin-bottom:32px;
+}
+
+.info-text{
+  font-size:16px;
+  line-height:1.8;
+  color:var(--text);
+  margin-bottom:24px;
+}
+
+.info-section{
+  margin-bottom:32px;
+}
+
+.info-section:last-child{
+  margin-bottom:0;
+}
+
+.info-section-title{
+  font-size:24px;
+  font-weight:800;
+  color:var(--text);
+  margin:0 0 16px;
+}
+
+.info-section-content{
+  font-size:16px;
+  line-height:1.8;
+  color:var(--text);
+  margin-bottom:12px;
+}
+
+.info-list{
+  list-style:none;
+  padding:0;
+  margin:16px 0;
+}
+
+.info-list li{
+  padding:12px 0;
+  padding-left:24px;
+  position:relative;
+  color:var(--text);
+  line-height:1.6;
+}
+
+.info-list li::before{
+  content:'•';
+  position:absolute;
+  left:0;
+  color:var(--accent);
+  font-weight:700;
+  font-size:20px;
+}
+
+.info-actions{
+  display:flex;
+  gap:16px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.info-btn{
+  padding:14px 28px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+  font-family:inherit;
+  transition:all .3s ease;
+  display:inline-block;
+}
+
+.info-btn:hover{
+  background:#000;
+  transform:translateY(-2px);
+  box-shadow:0 6px 20px rgba(0,0,0,.25);
+}
+
+.info-btn.secondary{
+  background:var(--bg);
+  color:var(--text);
+  border-color:var(--border);
+}
+
+.info-btn.secondary:hover{
+  background:var(--bg-soft);
+  border-color:var(--accent);
+  color:var(--accent);
+}
+
+@media (max-width: 768px){
+  .info-title{
+    font-size:32px;
+  }
+  .info-content{
+    padding:24px;
+  }
+  .info-section-title{
+    font-size:20px;
+  }
+}
+
